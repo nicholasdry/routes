@@ -1,19 +1,46 @@
 /* styles */
 
+@font-face {
+      src: url('fonts/geo.ttf');
+      font-family: header;
+}
+
 * {
       margin: 0;
       padding: 0;
       text-align: center;
+      background-color: #34495e;
 }
 
 #header {
       padding: 35px;
+      font-family: header;
+      color: white;
 }
 
 #dest-entry {
       margin-bottom: 15px;
+      padding: 15px;
+      border-style: solid;
+      font-size: 20px;
+      background-color: white;
+}
+
+#submit {
+      margin-bottom: 15px;
+      padding: 15px;
+      border-style: solid;
+      font-size: 20px;
+      background-color: #7f8c8d;
+}
+
+#output {
+      font-size: 25px;
+      color: white;
 }
 
 footer {
-      
+      margin-top: 15px;
+      font-size: 15px;
+      color: white;
 }

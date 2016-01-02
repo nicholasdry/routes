@@ -10,12 +10,21 @@ var bmtBroadWayLine = {
 var secondAveLine = {
       color: 'blue',
       poi: ['grand central', 'lexington avenue'],
-      services: 'N Q R',
-      name: "BMT Broadway Line",
+      services: 'Q T',
+      name: "Second Avenue Subway",
+};
+
+var sixthAveLine = {
+      color: 'orange',
+      poi: ['rockefeller center', 'bryant park', 'broadway'],
+      services: 'B D F M',
+      name: 'IND Sixth Avenue Line'
 };
 
 var destinations = [];
 destinations.push(bmtBroadWayLine);
+destinations.push(secondAveLine);
+destinations.push(sixthAveLine);
 
 function findDestination() {
 
