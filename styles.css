@@ -1,0 +1,19 @@
+/* styles */
+
+* {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+}
+
+#header {
+      padding: 35px;
+}
+
+#dest-entry {
+      margin-bottom: 15px;
+}
+
+footer {
+      
+}
