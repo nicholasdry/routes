@@ -2,7 +2,7 @@
 
 @font-face {
       src: url('fonts/geo.ttf');
-      font-family: header;
+      font-family: font;
 }
 
 * {
@@ -34,13 +34,36 @@
       background-color: #7f8c8d;
 }
 
-#output {
+#output { /*output being where the route is displayed*/
       font-size: 25px;
       color: white;
+      padding-bottom: 15px;
+}
+
+#container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+}
+
+#route-list {
+      float: left;
+      width: 200px;
+      font-family: font;
+}
+
+#route-list  ul {
+      list-style: none;
+}
+
+#station-list {
+      float: right;
+      width: 500px;
+      font-family: font;
 }
 
 footer {
-      margin-top: 15px;
+      padding-top: 500px;
       font-size: 15px;
       color: white;
 }
