@@ -4,9 +4,44 @@ var destinations = [];
 
 var bmtBroadWayLine = {
       color: 'yellow',
-      poi: ['times square', 'south ferry', 'union square', 'canal street'],
+      poi: ['Lexington Avenue',
+            '<br>59th Street Roosevelt Island Tramway',
+            '<br>Lexington Avenue Line',
+            '<br>Fifth Avenue',
+            '<br>59th Street',
+            '<br>Sixth Avenue Line',
+            '<br>63rd Street Line',
+            '<br>57th Street',
+            '<br>Queens Boulevard',
+            '<br>Sixth Avenue lines',
+            '<br>49th Street',
+            '<br>42nd Street Shuttle',
+            '<br>Times Square',
+            '<br>34th Street',
+            '<br>28th Street',
+            '<br>23rd Street',
+            '<br>14th Street',
+            '<br>New York University',
+            '<br>Sixth Avenue Line',
+            '<br>Prince Street',
+            '<br>Lexington Avenue',
+            '<br>Nassau Street lines',
+            '<br>Canal Street',
+            '<br>Fourth Avenue and Brighton lines',
+            '<br>Manhattan Bridge',
+            '<br>City Hall',
+            '<br>Broadway',
+            '<br>Eighth Avenue Line',
+            '<br>Cortlandt Street',
+            '<br>Rector Street',
+            '<br>Lexington Avenue Line',
+            '<br>Whitehall Street',
+            '<br>South Ferry'],
       services: 'N Q R',
       name: "Broadway Line",
+      stops: function() {
+            document.getElementById('station-list').innerHTML = bmtBroadWayLine.poi;
+      }
 };
 destinations.push(bmtBroadWayLine);
 
@@ -14,30 +49,20 @@ var secondAveLine = {
       color: 'blue',
       poi: ['125th Street (proposed)',
             '<br>Lexington Avenue Line',
-            '<br>116th Street (proposed)',
-            '<br>106th Street (proposed)',
-            '<br>96th Street (under construction)',
-            '<br>86th Street (under construction)',
-            '<br>72nd Street (under construction)',
+            '<br>96th Street',
+            '<br>86th Street',
+            '<br>72nd Street',
             '<br>63rd Street Lines',
             '<br>Broadway Line',
-            '<br>55th Street (proposed)',
             '<br>Lexington Avenue – 53rd Street',
             '<br>Queens Boulevard Line',
-            '<br>42nd Street (proposed)',
             '<br>Grand Central',
-            '<br>34th Street (proposed)',
-            '<br>23rd Street (proposed)',
-            '<br>14th Street (proposed)',
             '<br>Third Avenue',
             '<br>Houston Street Second Avenue',
             '<br>Chrystie Street Connection (to Williamsburg Bridge)',
             '<br>Nassau Street Line',
-            '<br>Grand Street (proposed)',
             '<br>Chrystie Street Connection (to Manhattan Bridge)',
-            '<br>Chatham Square (proposed)',
             '<br>Broadway Line (to Manhattan Bridge)',
-            '<br>Seaport (proposed)',
             '<br>Eighth Avenue Line',
             '<br>Broadway',
             '<br>Hanover Square'],
@@ -51,11 +76,35 @@ destinations.push(secondAveLine);
 
 var sixthAveLine = {
       color: 'red',
-      poi: ['columbia university', 'columbus circle', 'times square', 'penn station', 'canal street', 'south ferry'],
+      poi: ['57th Street',
+            'S<br>eventh Avenue',
+            '<br>Queens Boulevard Line',
+            '<br>Rockefeller Center',
+            '<br>42nd Street Shuttle',
+            '<br>42nd Street',
+            '<br>34th Street',
+            '<br>PATH at 33rd Street',
+            '<br>23rd Street',
+            '<br>14th Street',
+            '<br>Port Authority Trans-Hudson (PATH)',
+            '<br>Eighth Avenue Line',
+            '<br>Washington Square',
+            '<br>Eighth Avenue',
+            '<br>Eighth Avenue Line',
+            '<br>Broadway Line',
+            '<br>Broadway',
+            '<br>Chrystie Street Connection',
+            '<br>Second Avenue',
+            '<br>Delancey Street',
+            '<br>Nassau Street Line',
+            '<br>Grand Street',
+            '<br>East Broadway',
+            '<br>Manhattan Bridge',
+            '<br>York Street'],
       services: '1 2 3',
-      name: 'Broadway -- Seventh Avenue Line',
-      stops: function showStops() {
-
+      name: 'Seventh Avenue Line',
+      stops: function() {
+            document.getElementById('station-list').innerHTML = sixthAveLine.poi;
       }
 };
 destinations.push(sixthAveLine);
@@ -63,22 +112,66 @@ destinations.push(sixthAveLine);
 
 var canarsieLine = {
       color: 'gray',
-      poi: ['broadway junction'],
+      poi: ['Eighth Avenue',
+            '<br>14th Street',
+            '<br>Sixth Avenue',
+            '<br>Union Square',
+            '<br>14th Street',
+            '<br>Third Avenue',
+            '<br>First Avenue',
+            '<br>14th Street Tunnel',
+            '<br>Bedford Avenue',
+            '<br>Lorimer Street',
+            '<br>Metropolitan Avenue',
+            '<br>Graham Avenue',
+            '<br>Grand Street',
+            '<br>Montrose Avenue',
+            '<br>Morgan Avenue',
+            '<br>Jefferson Street',
+            '<br>DeKalb Avenue',
+            '<br>Myrtle–Wyckoff Avenues',
+            '<br>Halsey Street',
+            '<br>Wilson Avenue',
+            '<br>Aberdeen Street',
+            '<br>East New York Yard',
+            '<br>Broadway Junction',
+            '<br>Atlantic Avenue',
+            '<br>Sutter Avenue',
+            '<br>New Lots Line',
+            '<br>Livonia Avenue',
+            '<br>Long Island Rail Road',
+            '<br>New Lots Avenue',
+            '<br>East 105th Street',
+            '<br>Rockaway Parkway'],
       services: 'L',
       name: 'Canarsie Line',
-      stops: function showStops() {
-
+      stops: function() {
+            document.getElementById('station-list').innerHTML = canarsieLine.poi;
       }
 };
 destinations.push(canarsieLine);
 
 var concourseLine = {
       color: 'orange',
-      poi: ['Norwood – 205th Street', 'Concourse Yard', 'Bedford Park Boulevard', 'Kingsbridge Road', 'Fordham Road','182nd–183rd Streets', 'Tremont Avenue', '174th–175th Streets', '170th Street','167th Street','161st Street – Yankee Stadium' ,'IRT Jerome Avenue Line' ,'MNR Hudson Line' ,'Concourse Tunnel under Harlem River','155th Street','145th Street'],
+      poi: ['Norwood – 205th Street',
+      '<br>Concourse Yard',
+      '<br>Bedford Park Boulevard',
+      '<br>Kingsbridge Road',
+      '<br>Fordham Road',
+      '<br>182nd–183rd Streets',
+      '<br>Tremont Avenue',
+      '<br>174th–175th Streets',
+      '<br>170th Street',
+      '<br>167th Street',
+      '<br>161st Street – Yankee Stadium' ,
+      '<br>IRT Jerome Avenue Line' ,
+      '<br>MNR Hudson Line' ,
+      '<br>Concourse Tunnel under Harlem River',
+      '<br>155th Street','145th Street'],
       services: 'B D',
       name: 'Concourse Line',
-      stops: function showStops() {
-
+      stops: function() {
+            document.getElementById('station-list').innerHTML = concourseLine.poi;
       }
 };
 destinations.push(concourseLine);
@@ -144,8 +237,8 @@ function findDestination() {
 
       for (var i = 0; i < destinations.length; i++) {
             for (var j = 0; j < destinations[i].poi.length; j++) {
-                  if (destinations[i].poi[j] == document.getElementById("dest-entry").value) {
-                        lines.push(destinations[i].name + " (" + destinations[i].services + ") ");
+                  if (destinations[i].poi[j].toLowerCase() == "<br>" + document.getElementById("dest-entry").value) {
+                        lines.push("<br>" + destinations[i].name + " (" + destinations[i].services + ") ");
                         break;
                   }
             }
@@ -154,7 +247,7 @@ function findDestination() {
       if (lines.length == 0) {
             document.getElementById('output').innerHTML = "Check spelling or re-enter destination.";
       } else {
-            document.getElementById('output').innerHTML = "You can take any of the follow lines: " + lines;
+            document.getElementById('output').innerHTML = "You can take any of the follow lines: <br>" + lines;
       }
 
 }
